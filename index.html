@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Individual - Lembrete de Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <img src="https://www.sp.senai.br/images/senai.svg" alt="Logo do SENAI" class="logo">
+            <h1>Lembrete de Formulário</h1>
+        </header>
+        
+        <section class="conteudo">
+            <p>Digite nos campos abaixo. Suas informações serão salvas automaticamente e lembradas se você recarregar a página.</p>
+            
+            <form id="formulario-lembrete">
+                <div class="grupo-formulario">
+                    <label for="entrada-nome">Nome Completo</label>
+                    <input type="text" id="entrada-nome">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="entrada-email">E-mail</label>
+                    <input type="email" id="entrada-email">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="entrada-telefone">Telefone</label>
+                    <input type="tel" id="entrada-telefone">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="entrada-endereco">Endereço</label>
+                    <input type="text" id="entrada-endereco">
+                </div>
+                <div class="grupo-formulario-duplo">
+                    <div class="grupo-formulario">
+                        <label for="entrada-cidade">Cidade</label>
+                        <input type="text" id="entrada-cidade">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="entrada-uf">UF</label>
+                        <input type="text" id="entrada-uf" maxlength="2">
+                    </div>
+                </div>
+
+                <!-- BOTÕES -->
+                <div class="botoes-formulario">
+                    <button type="submit" id="btn-enviar">Enviar</button>
+                    <button type="button" id="btn-limpar">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
